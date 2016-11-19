@@ -1,0 +1,15 @@
+//
+// index.scss
+//
+//
+
+@import "reset";
+
+
+$header-min-height: 50px;
+
+.container-main {
+  margin: {
+    top: $header-min-height;
+  }
+}
