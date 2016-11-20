@@ -46,7 +46,7 @@ const server = {
 
 gulp.task('clean', () => {
   del([
-    paths.build
+    paths.build.html
   ]);
 });
 
@@ -89,12 +89,7 @@ gulp.task('font', () => {
 
 gulp.task('js', () => {
   return browserify(paths.src.main)
-    .transform(babelify, {
-      presets: [
-        'react',
-        'es2015'
-      ]
-    })
+    .transform(babelify)
     .bundle()
     .on('error', console.error.bind(console))
     .pipe(source('index.js'))

@@ -1,0 +1,12 @@
+//
+// _header.scss
+//
+//
+
+$header-min-height: 50px;
+
+nav {
+  .container {
+    height: $header-min-height;
+  }
+}
