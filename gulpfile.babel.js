@@ -3,14 +3,13 @@
  *
  */
 
-'use strict';
-
 import babelify from 'babelify';
 import browserify from 'browserify';
 import concat from 'gulp-concat';
 import connect from 'gulp-connect';
 import del from 'del';
 import gulp from 'gulp';
+import GulpDocker from 'gulp-docker';
 import open from 'gulp-open';
 import sass from 'gulp-sass';
 import source from 'vinyl-source-stream';
@@ -19,22 +18,26 @@ import source from 'vinyl-source-stream';
 const paths = {
   src: {
     html: 'src/*.html',
+    image: 'src/images/*',
+    font: [
+      'node_modules/bootstrap/fonts/*',
+      'node_modules/font-awesome/fonts/*'
+    ],
     sass: 'src/sass/*.scss',
     css: [
       'node_modules/bootstrap/dist/css/bootstrap.min.css',
       'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
+      'node_modules/font-awesome/css/font-awesome.min.css',
       'build/css/index.css'
-    ],
-    font: [
-      'node_modules/bootstrap/fonts/*'
     ],
     js: 'src/**/*.js',
     main: 'src/main.js'
   },
   build: {
     html: 'build',
-    css: 'build/css',
+    image: 'build/images',
     font: 'build/fonts',
+    css: 'build/css',
     js: 'build/js'
   },
   index: 'build/index.html'
@@ -65,6 +68,11 @@ gulp.task('html', () => {
   gulp.src(paths.src.html)
     .pipe(gulp.dest(paths.build.html))
     .pipe(connect.reload());
+});
+
+gulp.task('image', () => {
+  gulp.src(paths.src.image)
+    .pipe(gulp.dest(paths.build.image));
 });
 
 gulp.task('sass', () => {
@@ -99,6 +107,8 @@ gulp.task('js', () => {
 
 gulp.task('build', [
   'html',
+  'image',
+  'font',
   'css',
   'js'
 ]);

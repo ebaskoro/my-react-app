@@ -5,6 +5,7 @@
 
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
+import FontAwesome from 'react-fontawesome';
 
 
 /**
@@ -24,7 +25,13 @@ class Footer extends Component {
           <Row>
             <Col md={3} xs={12}>
               <address>
-                <strong>My React Application</strong>
+                <strong>
+                  <FontAwesome name="building" /> My App
+                </strong>
+                <br />
+                1234 My Street<br />
+                Neverland<br />
+                Country
               </address>
             </Col>
           </Row>

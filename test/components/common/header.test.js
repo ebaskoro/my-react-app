@@ -25,6 +25,7 @@ describe('Header', () => {
     expect(actual.props.children).toEqual(
       <Navbar.Header>
         <Navbar.Brand>
+          <img src="images/logo.jpg" />
         </Navbar.Brand>
         <Navbar.Text>
           My App
