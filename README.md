@@ -1,7 +1,9 @@
 # My React Application
 
-[![Build Status](https://travis-ci.org/ebaskoro/my-react-app.svg?branch=master)](https://travis-ci.org/ebaskoro/my-react-app)
-[![codecov](https://codecov.io/gh/ebaskoro/my-react-app/branch/master/graph/badge.svg)](https://codecov.io/gh/ebaskoro/my-react-app)
+[![Travis](https://img.shields.io/travis/ebaskoro/my-react-app.svg?style=plastic)](https://travis-ci.org/ebaskoro/my-react-app)
+[![Codecov](https://img.shields.io/codecov/c/github/ebaskoro/my-react-app.svg?style=plastic)](https://codecov.io/gh/ebaskoro/my-react-app)
+
+[![nodesource/node](http://dockeri.co/image/ebaskoro/my-react-app)](https://hub.docker.com/r/ebaskoro/my-react-app/)
 
 A sample of React.JS application using bootstrap, font awesome and gulp.
 
@@ -13,4 +15,4 @@ A sample of React.JS application using bootstrap, font awesome and gulp.
 
 ## Join the Chat
 
-[![Join the chat at https://gitter.im/ebaskoro/my-react-app](https://badges.gitter.im/ebaskoro/my-react-app.svg)](https://gitter.im/ebaskoro/my-react-app?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://img.shields.io/gitter/room/ebaskoro/my-react-app.svg?style=plastic)](https://gitter.im/ebaskoro/my-react-app)
