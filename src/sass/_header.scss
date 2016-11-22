@@ -10,3 +10,44 @@ nav {
     height: $header-min-height;
   }
 }
+
+.navbar {
+  border: {
+    width: 0;
+  }
+}
+
+.navbar-default {
+  background: {
+    image: linear-gradient(rgb(143, 143, 143), rgb(128, 128, 128), rgb(138, 138, 138));
+  }
+}
+
+.navbar-brand {
+  img {
+    height: $header-min-height - 25;
+    width: $header-min-height - 25;
+  }
+}
+
+.navbar-text {
+  color: white !important;
+}
+
+.navbar-header {
+  .navbar-text {
+    font: {
+      family: 'Tangerine', cursive;
+      size: 14px;
+      weight: 700;
+    }
+
+    margin: {
+      left: 0;
+    }
+
+    text: {
+      shadow: 2px 2px 2px black;
+    }
+  }
+}

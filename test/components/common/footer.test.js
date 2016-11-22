@@ -37,6 +37,23 @@ describe('Footer', () => {
               Country
             </address>
           </Col>
+          <Col md={3} xs={12}>
+            <h4>Follow Us</h4>
+            <p>
+              <FontAwesome name="globe" size="lg" /> my.app
+            </p>
+            <p>
+              <FontAwesome name="facebook-official" size="lg" /> fb.com/my.app
+            </p>
+            <p>
+              <FontAwesome name="twitter" size="lg" /> twitter.com/my.app
+            </p>
+          </Col>
+          <Col md={3} xs={12}>
+            <p className="text-right">
+              <FontAwesome name="copyright" /> 2016 My App
+            </p>
+          </Col>
         </Row>
       </Grid>
     );

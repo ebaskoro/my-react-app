@@ -7,6 +7,7 @@ import React from 'react';
 import ReactTestUtils from 'react-addons-test-utils';
 import Header from '../../../src/components/common/header';
 import { Navbar } from 'react-bootstrap';
+import { Link } from 'react-router';
 
 
 describe('Header', () => {
@@ -25,7 +26,9 @@ describe('Header', () => {
     expect(actual.props.children).toEqual(
       <Navbar.Header>
         <Navbar.Brand>
-          <img src="images/logo.jpg" />
+          <Link to="/">
+            <img src="images/logo.jpg" />
+          </Link>
         </Navbar.Brand>
         <Navbar.Text>
           My App

@@ -4,8 +4,8 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/app';
+import { render } from 'react-dom';
+import routes from './routes';
 
 
-ReactDOM.render(<App />, document.getElementById('app'));
+render(routes, document.getElementById('app'));

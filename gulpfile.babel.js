@@ -9,7 +9,6 @@ import concat from 'gulp-concat';
 import connect from 'gulp-connect';
 import del from 'del';
 import gulp from 'gulp';
-import GulpDocker from 'gulp-docker';
 import open from 'gulp-open';
 import sass from 'gulp-sass';
 import source from 'vinyl-source-stream';
@@ -25,6 +24,7 @@ const paths = {
     ],
     sass: 'src/sass/*.scss',
     css: [
+      'build/css/imports.css',
       'node_modules/bootstrap/dist/css/bootstrap.min.css',
       'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
       'node_modules/font-awesome/css/font-awesome.min.css',

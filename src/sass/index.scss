@@ -15,3 +15,13 @@ $header-min-height: 50px;
     top: $header-min-height;
   }
 }
+
+@media (min-width: 768px) {
+  $header-max-height: 100px;
+
+  .container-main {
+    margin: {
+      top: $header-max-height
+    }
+  }
+}

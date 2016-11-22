@@ -5,6 +5,7 @@
 
 import React, { Component } from 'react';
 import { Navbar, fixedTop } from 'react-bootstrap';
+import { Link } from 'react-router';
 
 
 /**
@@ -22,7 +23,9 @@ class Header extends Component {
       <Navbar fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <img src="images/logo.jpg" />
+            <Link to="/">
+              <img src="images/logo.jpg" />
+            </Link>
           </Navbar.Brand>
           <Navbar.Text>
             My App
