@@ -10,3 +10,7 @@ A sample of React.JS application using bootstrap, font awesome and gulp.
 ### 0.0.1
 
 * Initial check in.
+
+## Join the Chat
+
+[![Join the chat at https://gitter.im/ebaskoro/my-react-app](https://badges.gitter.im/ebaskoro/my-react-app.svg)](https://gitter.im/ebaskoro/my-react-app?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
