@@ -16,12 +16,17 @@ ENV APP_DIR /usr/src/app
 RUN mkdir -p ${APP_DIR}
 WORKDIR ${APP_DIR}
 
-# Copy necessary files for running the application
+# Copy the source files
+ADD src src
+
+# Install dependencies
 ADD package.json package.json
-ADD node_modules node_modules
+RUN npm install
+
+# Build the Application
 ADD .babelrc .babelrc
 ADD gulpfile.babel.js gulpfile.babel.js
-ADD build build
+RUN gulp build
 
 EXPOSE 9999
 
