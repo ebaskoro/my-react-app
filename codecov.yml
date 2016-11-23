@@ -5,8 +5,9 @@ codecov:
     webhook:
       default:
         url: https://webhooks.gitter.im/e/18d3e2a6d134a4c3f823
-        threshold: 0
-        branches: master
+        threshold: 1.25
+        branches:
+          - master
         only_pulls: false
 
 comment:
