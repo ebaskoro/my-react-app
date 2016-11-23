@@ -9,6 +9,10 @@ A sample of React.JS application using bootstrap, font awesome and gulp.
 
 ## Changes
 
+### 0.0.2
+
+* Added flux.
+
 ### 0.0.1
 
 * Initial check in.
