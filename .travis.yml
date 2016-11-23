@@ -11,6 +11,9 @@ notifications:
     on_failure: always
     on_start: always
 
+  slack:
+    secure: NuUjhdO43z76UPVfoJ43BXzkWGG5cKM6+fMWVv+H51FKvoTDqF1fqf0TYbknhNHjM45eYQFosCkQIuWf1darWBeRgA7zFi9psrQ+x84l7aQCMZlI1jpcha8E0vTvCCT6jdKExf8/UxzQoBt/Nc+yKc6/jiCmVOSfrcuFd/pAMgXvPZy4GVT0ts104FrDpeh1oauoFHDKotkvbDHXoqu4AaDUuxA0wpnkP8EGjHGmEUVI//BTKr3JM0Vmr31GnD9cak2kvR2ssZrS0gewd/EOO5MKdsf41f1zQk5Uva1Q5JOUAjeMBJD1duo6vy6wnjGKU+1AbP3coBBEe7jy05Ix1QAxK3cN5o1oOady2rmoyU2vfQGS7VxEefzKYVYEwgTV75pXmfQLVcteY7q8YIia0EPoqC47GHAicEAV6jjBlWeQYXtzYVgrUQKYhQzfENFF+FEitSde1JcV06FXuUotfVv1jzFROZh1xAfcAYUuuwOzZljxGobUXoQTwxbaxNReTpn1Gj9TJCbZLuMszFHChjTV0iuZ/lCBxxPFJiHnwhYdaR71NQF9LcJgxHwuSjR4N1J0luQlL2LYbvXZJhpqRmZv6whefHZrsZ93sG1sRIdKqeL5Zb/HYHP8Tz6ZNH8CsVf+TrSEL+60/6ZP8Q2gj4fMn7IgYURk6OZdMUO9Sow=
+
 install:
   - npm install -g gulp-cli
   - npm install
