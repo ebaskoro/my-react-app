@@ -2,6 +2,10 @@
   "name": "my-react-app",
   "version": "0.0.2",
   "description": "My application based on React.JS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebaskoro/my-react-app.git"
+  },
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
