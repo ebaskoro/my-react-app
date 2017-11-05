@@ -3,7 +3,7 @@
 #
 #
 
-# Use node.js argon LTS base image
+# Use node.js version 6 base image
 FROM node:6
 
 MAINTAINER Eki Baskoro

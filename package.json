@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/ebaskoro/my-react-app.git"
   },
+  "private": true,
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
@@ -16,7 +17,7 @@
     "reactjs"
   ],
   "author": "Eki Baskoro <eki@baskoro.org>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "flux": "^3.1.0",
